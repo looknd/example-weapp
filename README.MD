@@ -1,6 +1,7 @@
 # hello-weapp 微信小程序最简示例教程
 
 > https://github.com/dingyiming/weapp-example/issues/3
+
 > 仓库：https://github.com/dingyiming/weapp-example
 
 -  打开[微信小程序官方开发文档](https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1474644089434)，最好全篇看一遍，基本上就会了。
