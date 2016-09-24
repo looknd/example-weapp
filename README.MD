@@ -80,7 +80,7 @@
 
 - ok 了，可以开始进一步熟悉微信小程序每一个组件和API来做应用了。
 
-
+- 更多资源 访问 https://github.com/dingyiming/weapp-example/issues/2
 
 
 
