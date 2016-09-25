@@ -1,3 +1,4 @@
+var time = 0;
 Page({
     data: {
         list: [
@@ -35,10 +36,13 @@ Page({
         ]
     },
     widgetsToggle: function (e) {
+        time++;
+        console.log('=========>', e.currentTarget.id);
         var id = e.currentTarget.id, list = this.data.list;
         for (var i = 0, len = list.length; i < len; ++i) {
+            console.log(time);
             if (list[i].id == id) {
-                list[i].open = !list[i].open;
+                list[i].open = true;
             } else {
                 list[i].open = false;
             }
@@ -46,5 +50,6 @@ Page({
         this.setData({
             list: list
         });
+        console.log(this.data.list);
     }
 });
