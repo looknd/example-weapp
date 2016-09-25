@@ -1,0 +1,49 @@
+<view>
+  <!-- 用户基本信息 -->
+  <template is="userinfo" data="{{ ...userInfo }}"></template>
+
+  <!--提醒-->
+  <template is="notice"></template>  
+
+  <!--九宫格-->
+  <view class="grid">
+    <template is="grid" wx:for="{{ oneList }}" data="{{ item }}"></template>
+  </view>
+  <view class="grid">
+    <template is="grid" wx:for="{{ twoList }}" data="{{ item }}"></template>
+  </view>
+</view>
+
+
+<template name="userinfo">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{ avatarUrl}}" background-size="cover"></image>
+    <view class="userinfo-body">
+        <view class="userinfo-content">
+            <text class="userinfo-nickname">{{ nickName }}</text>
+            <view>
+            <text>个人主页</text>
+            </view>
+        </view>
+        <view class="userinfo-subcontent">
+            <text>关注 0 </text>
+            <text>被关注 0 </text>
+        </view>
+    </view>
+  </view>
+</template>
+
+<template name="notice">
+  <view class="notice">
+    <icon type="info_circle" color="green"></icon>
+    <text class="notice__text">提醒</text>  
+    
+  </view>
+</template>
+
+<template name="grid">
+  <view class="grid-item">
+       <image src="{{ item.img }}" class="grid__img"></image>
+       <text>{{ item.title }}</text>
+  </view>
+</template>
